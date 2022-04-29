@@ -1,0 +1,38 @@
+.item {
+    width: 550px;
+    height: 310px;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: rgba(7, 7, 7, 0.2) 0px 8px 24px;
+    margin-top: 20px;
+}
+
+.item img {
+    width: 250px;
+    height: 309px;
+    border-radius: 8px 0 0 8px;
+}
+.item-information{
+    
+    width: 100%;
+    position: relative;
+    text-align: start;
+    background-color:whitesmoke ;
+}
+.item-information p{
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.btn-update button{
+    width: 100%;
+    border: 0;
+    border-radius: 0 0 8px 0;
+    background-color: yellowgreen;
+}
+.btn-update {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
