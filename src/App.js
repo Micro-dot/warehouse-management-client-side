@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Books from './Components/Books/Books';
+import BookItemDetails from './Components/BookItemDetails/BookItemDetails';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/blogs' element={<Home></Home>}></Route>
         <Route path='/Login' element={<Home></Home>}></Route>
         <Route path='/Signup' element={<Home></Home>}></Route>
+        <Route path='/items/:itemsId' element={<BookItemDetails></BookItemDetails>}></Route>
       </Routes>
     </div>
   );

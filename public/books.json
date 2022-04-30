@@ -1,6 +1,5 @@
 [
     {
-        "_id" : "1",
         "name": "ULYSSES",
         "img": "https://www.gutenberg.org/files/4300/4300-h/images/cover.jpg",
         "description": "Written as an homage to Homer's epic poem The Odyssey, Ulysses follows its hero, Leopold Bloom, through the streets of Dublin. Overflowing with puns, references to classical literature, and stream-of-consciousness writing, this is a complex, multilayered novel about one day in the life of an ordinary man.",
@@ -9,7 +8,6 @@
         "publisher": "James Joyce"
     },
     {
-        "_id" : "12",
         "name": "THE GREAT GATSBY",
         "img": "https://www.bdcbooks.com/wp-content/uploads/2020/03/51IArDInCL.jpg",
         "description": "The Great Gatsby is now considered a contender for “the Great American Novel.” Fitzgerald wanted to title the novel “Trimalchio in West Egg,” but both his wife and his editor preferred “The Great Gatsby.”",
@@ -18,7 +16,6 @@
         "publisher": "F. Scott Fitzgerald"
     },
     {
-        "_id" : "13",
         "name": " A Time to Kill",
         "img": "https://rishikaspeaks.files.wordpress.com/2019/09/john-grisham-a-time-to-kill.jpg",
         "description": "This one is from 3:3 in the Ecclesiastes, again part of the Old Testament. The anonymous author is a King of Jerusalem who relates and analyses events in his own life. This has resonated strongly with a lot of people: Abraham Lincoln quoted Ecclesiastes when addressing Congress in 1862, and the novelist Thomas Wolfe called it the greatest single piece of writing ",
@@ -27,7 +24,6 @@
         "publisher": "John Grisham"
     },
     {
-        "_id" : "14",
         "name": "CATCH-22",
         "img": "https://www.penguin.co.uk/content/dam/prh/books/103/1036341/9781784875848.jpg",
         "description": "Catch-22 is widely seen as one of the most significant American novels of the twentieth century. The New York Times called it “a dazzling performance that will outrage nearly as many readers as it delights.” ",
@@ -36,7 +32,6 @@
         "publisher": "Joseph Heller"
     },
     {
-        "_id" : "15",
         "name": "DARKNESS AT NOON",
         "img": "https://images-na.ssl-images-amazon.com/images/I/71MrDrPlt1L.jpg",
         "description": "Darkness at Noon is the story of a man named Rubashov, who is arrested in the middle of the night by the state's secret police.Darkness at Noon sold over 400,000 copies when it was published and its portrait of Communism was a major factor in the Communist Party's defeat in France. ",
@@ -45,7 +40,6 @@
         "publisher": " Arthur Koestler"
     },
     {
-        "_id" : "16",
         "name": "TO THE LIGHTHOUSE",
         "img": "https://kbimages1-a.akamaihd.net/3e44d945-c94c-4876-9e1b-f4a8137eba6c/1200/1200/False/to-the-lighthouse-the-waves.jpg",
         "description": "To the Lighthouse is a 1927 novel by Virginia Woolf. The novel centres on the Ramsay family and their visits to the Isle of Skye in Scotland between 1910 and 1920. Writer Arnold Bennett criticized the novel's slight narrative: “A group of people plan to sail in a small boat to a lighthouse. At the end some of them reach the lighthouse in a small boat.",
@@ -54,7 +48,6 @@
         "publisher": "Virginia Woolf"
     },
     {
-        "_id" : "17",
         "name": "I, CLAUDIUS",
         "img": "https://m.media-amazon.com/images/I/51QNKRCFamL.jpg",
         "description": "Claudius—considered too stupid, lame, and ugly to fear—observes. The book ends with Claudius's ascension to emperor; Graves continues the saga in Claudius the God (also worth reading, though not on this list).",
@@ -63,7 +56,6 @@
         "publisher": "Robert Graves"
     },
     {
-        "_id" : "18",
         "name": "INVISIBLE MAN",
         "img": "https://static-01.daraz.com.bd/p/5e6665566e55ef94b1fed1f0b280e441.jpg",
         "description": "Invisible Man is one man's story of how the world around him has decided that he is invisible, and therefore disposable. Moving from the unnamed hero's high school days, to the campus of a Southern college and then to New York's Harlem, ",
@@ -72,7 +64,6 @@
         "publisher": "Ralph Ellison"
     },
     {
-        "_id" : "19",
         "name": "NATIVE SON",
         "img": "https://upload.wikimedia.org/wikipedia/en/0/0f/NativeSon.JPG",
         "description": "The story of Bigger Thomas, a poor, twentysomething African-American man living in Chicago, Native Son unflinchingly portrays the damage poverty and racism can inflict. Bigger Thomas is a difficult, even unsympathetic character, but his experiences force the reader to confront the real cost of societal injustice. ",
@@ -81,7 +72,6 @@
         "publisher": "Richard Wright"
     },
     {
-        "_id" : "20",
         "name": "THE GOOD SOLDIER",
         "img": "https://images-na.ssl-images-amazon.com/images/I/917ei6eknDL.jpg",
         "description": "The Ashburnhams and the Dowells are wealthy, charming, and refined. They have been close friends for years. Their lives are apparently perfect. But in this short novel set just before World War I, nothing is what it seems. ",
@@ -90,7 +80,6 @@
         "publisher": "Ford Madox Ford"
     },
     {
-        "_id" : "21",
         "name": "DELIVERANCE",
         "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624579180l/592657._SY475_.jpg",
         "description": "Famously made into a 1972 film with Burt Reynolds and Jon Voight, this story of a weekend canoe trip gone horribly, horribly wrong won critical acclaim when it was first published. ",
@@ -99,7 +88,6 @@
         "publisher": "James Dickey"
     },
     {
-        "_id" : "22",
         "name": "NOSTROMO",
         "img": "https://kbimages1-a.akamaihd.net/44bde08e-5112-4905-8bd3-d80678269e40/353/569/90/False/nostromo-a-tale-of-the-seaboard-28.jpg",
         "description": "Originally published in 1904, Nostromo is considered Conrad's supreme achievement. Set in the imaginary South American republic of Costaguana, the novel reveals the effects of unbridled greed and imperialist interests on many different lives. ",
@@ -108,7 +96,6 @@
         "publisher": "Joseph Conrad"
     },
     {
-        "_id" : "23",
         "name": "PALE FIRE",
         "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388155863l/7805.jpg",
         "description": "Pale Fire is a stylistic masterpiece in true Nabokovian fashion: a 999-line poem by reclusive genius John Shade with an adoring foreword and commentary by Shade's self-styled Dr. Boswell, Charles Kinbote, adding up to a satiric novel of literature and intrigue",
@@ -117,7 +104,6 @@
         "publisher": "Vladimir Nabokov"
     },
     {
-        "_id" : "24",
         "name": "ON THE ROAD",
         "img": "https://i.pinimg.com/originals/c7/81/9a/c7819a6746b6e68547152b7649b565e7.jpg",
         "description": "A loosely fictionalized version of Kerouac's road trips with Neal Cassady (Dean Moriarty, in the novel), this novel's tone captures the wild rhythm of life on the road. Jack Kerouac described On the Road as “a journey through post-Whitman America to FIND that America and to FIND the inherent goodness in American man.",
@@ -126,7 +112,6 @@
         "publisher": "Jack Kerouac"
     },
     {
-        "_id" : "25",
         "name": "PARADE'S END",
         "img": "https://images.penguinrandomhouse.com/cover/9780307744203",
         "description": "Set before, during, and slightly after World War I, Parade's End is the story of Christopher Tietjens, whose decency is consistently taken advantage of by his beautiful and devious wife Sylvia. ",
@@ -135,7 +120,6 @@
         "publisher": "Ford Madox Ford"
     },
     {
-        "_id" : "26",
         "name": "SCOOP",
         "img": "https://www.evelynwaugh.org.uk/styled-135/files/scoop---version-2.jpg",
         "description": "A send-up of tabloid journalism in the 1930s, Waugh drew inspiration for Scoop from his time working as a special correspondent for the Daily Mail. In the novel, the two biggest newspapers, The Daily Beast and The Daily Brute, report on the Italian invasion of Ethiopia. ",
@@ -144,7 +128,6 @@
         "publisher": "Evelyn Waugh"
     },
     {
-        "_id" : "27",
         "name": "FINNEGANS WAKE",
         "img": "https://cdn2.penguin.com.au/covers/original/9780141183114.jpg",
         "description": "When James Joyce finished writing Ulysses—his long, complicated masterpiece about one day in the life of Dublin—he decided to write Finnegans Wake: a long, complicated novel about one night in the life of Dublin. ",
@@ -153,7 +136,6 @@
         "publisher": "James Joyce"
     },
     {
-        "_id" : "28",
         "name": "ANGLE OF REPOSE",
         "img": "https://images-na.ssl-images-amazon.com/images/I/91dHlR0W+kL.jpg",
         "description": "Winner of the Pulitzer Prize when it was published in 1971, Wallace Stegner's American classic centers on Lyman Ward, a historian who relates a fictionalized biography of his pioneer grandparents.",
@@ -162,7 +144,6 @@
         "publisher": "Wallace Stegner"
     },
     {
-        "_id" : "29",
         "name": "RAGTIME",
         "img": "https://4.bp.blogspot.com/-qFwzRsAyc9M/TvFJdhcd_YI/AAAAAAAAFBQ/NvFSUgTWXr0/s1600/ragtime.jpeg",
         "description": "Ragtime opens in 1906 in New Rochelle, New York, at the home of an affluent American family. One lazy Sunday afternoon, the famous escape artist Harry Houdini swerves his car into a telephone pole outside their house. And almost magically, the line between fantasy and historical fact, between real and imaginary characters.",
@@ -171,7 +152,6 @@
         "publisher": "E.L. Doctorow"
     },
     {
-        "_id" : "30",
         "name": "THE MAGUS",
         "img": "https://picture.bookfrom.net/img/ted-neill/the_magus.jpg",
         "description": "The Magus is a genre-bending story about a young Englishman drawn into the manipulative psychological games of a wealthy recluse. The novel was widely praised when it was published in 1966; in perhaps the most effusive review of all time, The New York Times called The Magus “a pyrotechnical extravaganza, a wild, hilarious charade, a dynamo of suspense and horror.",
