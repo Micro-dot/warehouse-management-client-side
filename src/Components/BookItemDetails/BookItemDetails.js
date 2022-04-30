@@ -2,15 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './BookItemDetails.css';
 const BookItemDetails = () => {
-    const {itemsId} = useParams();
+    const { itemsId } = useParams();
     const [bookItem, setBookItem] = useState({});
     console.log(bookItem);
-    useEffect(()=>{
+    useEffect(() => {
         const url = `http://localhost:5000/items/${itemsId}`;
         fetch(url)
-        .then(res => res.json())
-        .then(data => setBookItem(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setBookItem(data))
+    }, [])
+    const handleDelivered = () => {
+        const { quantity, ...rest } = bookItem;
+        const quantity1 = parseInt(bookItem.quantity) - 1;
+        const newQuantity = { quantity: quantity1, ...rest }
+        setBookItem(newQuantity);
+    }
     return (
         <div>
             <div className='item mx-auto item-slice'>
@@ -25,7 +31,7 @@ const BookItemDetails = () => {
                     <p><b>Price:</b> ${bookItem.price}</p>
                     <p><b>Publish by</b> {bookItem.publisher}</p>
                     <div className='btn-update'>
-                        <button>Delivered</button>
+                        <button onClick={handleDelivered}>Delivered</button>
                     </div>
                 </div>
             </div>
