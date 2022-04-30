@@ -1,9 +1,10 @@
 import React from 'react';
-import {useNavigate } from 'react-router-dom';
-
-const Item = ({book}) => {
+import { useNavigate } from 'react-router-dom';
+import './item.css';
+const Item = ({ book }) => {
+    
     const navigate = useNavigate();
-    const navigateInventory = id =>  {
+    const navigateInventory = id => {
         navigate(`/items/${id}`);
     }
     return (
@@ -24,6 +25,7 @@ const Item = ({book}) => {
                 </div>
             </div>
         </div>
+
     );
 };
 

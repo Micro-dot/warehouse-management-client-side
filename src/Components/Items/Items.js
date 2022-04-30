@@ -1,7 +1,7 @@
 import React from 'react';
 import useBookItems from '../../hooks/useBookItems';
 import Item from '../Item/Item';
-
+import './Items.css';
 const Items = () => {
     const [books, setBooks] = useBookItems();
     const bookSlice = books.slice(0, 6);
@@ -14,6 +14,7 @@ const Items = () => {
                     book={book}
                 ></Item>)
             }
+
         </div>
     );
 };

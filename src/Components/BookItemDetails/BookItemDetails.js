@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './BookItemDetails.css';
 const BookItemDetails = () => {
     const { itemsId } = useParams();
     const [bookItem, setBookItem] = useState({});
+    const navigate = useNavigate();
+
     console.log(bookItem);
     useEffect(() => {
         const url = `http://localhost:5000/items/${itemsId}`;
@@ -11,11 +13,30 @@ const BookItemDetails = () => {
             .then(res => res.json())
             .then(data => setBookItem(data))
     }, [])
-    const handleDelivered = () => {
+    const handleDelivered = data => {
         const { quantity, ...rest } = bookItem;
         const quantity1 = parseInt(bookItem.quantity) - 1;
-        const newQuantity = { quantity: quantity1, ...rest }
+        const quantityStr = quantity1.toString();
+        const newQuantity = { quantity: quantityStr, ...rest }
         setBookItem(newQuantity);
+
+        const getquantity = bookItem.quantity;
+        console.log(getquantity);
+        const updateQuantity = { getquantity };
+        const url = `http://localhost:5000/items/${itemsId}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateQuantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+
+
     }
     return (
         <div>
@@ -34,6 +55,9 @@ const BookItemDetails = () => {
                         <button onClick={handleDelivered}>Delivered</button>
                     </div>
                 </div>
+            </div>
+            <div className='manage-inv'>
+                <button onClick={() => navigate('/books')}>Manage Inventories</button>
             </div>
         </div>
     );

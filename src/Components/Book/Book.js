@@ -1,5 +1,6 @@
 import React from 'react';
 import './Book.css';
+
 const Book = ({ book }) => {
     const { name, img, description, price, quantity, publisher } = book;
     return (
@@ -19,6 +20,7 @@ const Book = ({ book }) => {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };
