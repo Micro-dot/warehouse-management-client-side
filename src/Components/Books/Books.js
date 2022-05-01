@@ -1,28 +1,51 @@
-import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useBookItems from '../../hooks/useBookItems';
-import Book from '../Book/Book';
 import './Books.css'
-import { useForm } from "react-hook-form";
+
 const Books = () => {
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const navigate = useNavigate();
     const [books, setBooks] = useBookItems();
+    const handleItemDelete = id => {
+        const alert = window.confirm("Confirm Delete");
+        if (alert) {
+            const url = `http://localhost:5000/items/${id}`;
+            fetch(url, {
+                method: "DELETE"
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remainItem = books.filter(book => book._id !== id);
+                    setBooks(remainItem);
+                })
+        }
+    }
     return (
         <div>
             <div className="items-body">
                 {
-                    books.map(book => <Book
-                        book={book}
-                        key={book._id}
-                    ></Book>)
-                }
+                    books.map(book =>
+                        <div className='item mx-auto '>
+                            <div>
+                                <img src={book.img} alt="" />
+                            </div>
+                            <div className='item-information'>
+                                <h5 className='ms-3'>Name: {book.name}</h5>
+                                <p><b>Description:</b> {book.description.slice(0, 130)}...</p>
+                                <p><b>Quantity:</b> {book.quantity}</p>
+                                <p><b>Price:</b> ${book.price}</p>
+                                <p><b>Publish by</b> {book.publisher}</p>
+                                <div className='btn-update'>
+                                    <button onClick={() => handleItemDelete(book._id)}>Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
             </div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("firstName", { required: true, maxLength: 20 })} />
-                <input {...register("lastName", { pattern: /^[A-Za-z]+$/i })} />
-                <input type="number" {...register("age", { min: 18, max: 99 })} />
-                <input type="submit" />
-            </form>
+
+            <button onClick={() => navigate('/addNewItems')} className='addnewitems'>Add New Items</button>
+
         </div>
     );
 };
