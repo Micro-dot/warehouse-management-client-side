@@ -31,7 +31,7 @@ const Books = () => {
                             </div>
                             <div className='item-information'>
                                 <h5 className='ms-3'>Name: {book.name}</h5>
-                                <p><b>Description:</b> {book.description.slice(0, 130)}...</p>
+                                <p><b>Description:</b> {book.description.slice(0, 130)}... </p>
                                 <p><b>Quantity:</b> {book.quantity}</p>
                                 <p><b>Price:</b> ${book.price}</p>
                                 <p><b>Publish by</b> {book.publisher}</p>
