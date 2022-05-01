@@ -1,0 +1,28 @@
+form input {
+    margin: 15px 0 0 0;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.add-book-button {
+    width: 25%;
+    margin: auto;
+    color: black;
+    margin-top: 20px;
+    background: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 4px 6px 6px #cbced1, -2px -2px white;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.add-book-button:hover {
+    box-shadow: none;
+    background-color:aqua;
+}

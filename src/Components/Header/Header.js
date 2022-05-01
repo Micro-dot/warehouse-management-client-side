@@ -4,7 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-
+import './Header.css';
 const Header = () => {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Header = () => {
         navigate('/signin');
     }
     return (
-        <Navbar collapseOnSelect expand="lg" bg="success" variant="dark" >
+        <Navbar collapseOnSelect expand="lg" className='nav-menu' >
             <Container>
                 <Navbar.Brand>Book</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,9 +24,14 @@ const Header = () => {
                         <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                     </Nav>
                     <Nav>
-                        {user ? <Nav.Link onClick={handleLogOut}>Log Out</Nav.Link> :
+                        {user ?
                             <>
                                 <Nav.Link as={Link} to="addNewItems">Add Item</Nav.Link>
+                                <Nav.Link onClick={handleLogOut}>Log Out</Nav.Link>
+                            </>
+                            :
+                            <>
+
                                 <Nav.Link as={Link} to="signin">Login In</Nav.Link>
                                 <Nav.Link as={Link} to="signup">Sign Up</Nav.Link>
                             </>
