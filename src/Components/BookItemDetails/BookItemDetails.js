@@ -57,7 +57,7 @@ const BookItemDetails = () => {
                 </div>
             </div>
             <div className='manage-inv'>
-                <button onClick={() => navigate('/books')}>Manage Inventories</button>
+                <button onClick={() => navigate('/manageitems')}>Manage Inventories</button>
             </div>
         </div>
     );

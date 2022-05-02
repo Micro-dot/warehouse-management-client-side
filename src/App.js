@@ -8,6 +8,7 @@ import AddNewItems from './Components/AddNewItems/AddNewItems';
 import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/Signup/SignUp';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import Loading from './Components/Loading/Loading';
 
 function App() {
   return (
@@ -16,8 +17,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/books' element={<Books></Books>}></Route>
-        <Route path='/addNewItems' element={<RequireAuth><AddNewItems></AddNewItems></RequireAuth>}></Route>
+        <Route path='/loading' element={<Loading></Loading>}></Route>
+        <Route path='/manageitems' element={
+          <RequireAuth>
+            <Books></Books>
+          </RequireAuth>}></Route>
+        <Route path='/addNewItems' element={<RequireAuth>
+          <AddNewItems></AddNewItems>
+        </RequireAuth>}></Route>
         <Route path='/items/:itemsId' element={<BookItemDetails></BookItemDetails>}></Route>
         <Route path='signin' element={<SignIn></SignIn>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>

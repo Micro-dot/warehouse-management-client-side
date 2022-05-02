@@ -13,14 +13,14 @@ const Header = () => {
         navigate('/signin');
     }
     return (
-        <Navbar collapseOnSelect expand="lg" className='nav-menu' >
+        <Navbar collapseOnSelect sticky='top' expand="lg" className='nav-menu' >
             <Container>
                 <Navbar.Brand>Book</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav id='nav-link' className="me-auto">
                         <Nav.Link as={Link} to="home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="books">Books</Nav.Link>
+                        <Nav.Link as={Link} to="manageitems">Manage Items</Nav.Link>
                         <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                     </Nav>
                     <Nav>
