@@ -9,6 +9,7 @@ import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/Signup/SignUp';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Loading from './Components/Loading/Loading';
+import MyItems from './Components/MyItems/MyItems';
 
 function App() {
   return (
@@ -21,10 +22,18 @@ function App() {
         <Route path='/manageitems' element={
           <RequireAuth>
             <Books></Books>
-          </RequireAuth>}></Route>
-        <Route path='/addNewItems' element={<RequireAuth>
-          <AddNewItems></AddNewItems>
-        </RequireAuth>}></Route>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/addNewItems' element={
+          <RequireAuth>
+            <AddNewItems></AddNewItems>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/myitems' element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>}>
+        </Route>
         <Route path='/items/:itemsId' element={<BookItemDetails></BookItemDetails>}></Route>
         <Route path='signin' element={<SignIn></SignIn>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>

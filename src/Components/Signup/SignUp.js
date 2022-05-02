@@ -38,31 +38,34 @@ const SignUp = () => {
         return <Loading></Loading>
     }
     return (
-        <div className="login-container">
-            <div className="login-title">SIGN UP</div>
+        <div className='d-flex'>
+            <img className='login-image' src={"https://thumbs.dreamstime.com/b/bookstore-interior-bookshelves-cheerful-cashier-desk-advertising-banner-poster-promotional-leaflet-flat-vector-184179648.jpg"} alt="" />
+            <div className="login-container">
+                <div className="login-title">SIGN UP</div>
 
-            <form onSubmit={handleFormSignin} className="login-form">
-                <input onChange={handleEmail} type="text" placeholder="Your Email" required />
-                <input onChange={handlePassword} type="password" name="" id="" placeholder='password' required />
-                <input onChange={handleConfirmPassword} type="password" placeholder="confirm password" required />
-                <p className='error-message'>{error || error1?.message}</p>
-                <button>Sign up</button>
-            </form>
+                <form onSubmit={handleFormSignin} className="login-form">
+                    <input onChange={handleEmail} type="text" placeholder="Your Email" required />
+                    <input onChange={handlePassword} type="password" name="" id="" placeholder='password' required />
+                    <input onChange={handleConfirmPassword} type="password" placeholder="confirm password" required />
+                    <p className='error-message'>{error || error1?.message}</p>
+                    <button>Sign up</button>
+                </form>
 
-            <p className="mt-2">Already have an account? <Link to='/signin'>Login</Link></p>
+                <p className="mt-2">Already have an account? <Link to='/signin'>Login</Link></p>
 
-            <div className='d-flex align-items-center'>
-                <div style={{ height: '1px' }} className='bg-dark w-50'></div>
-                <p className='mt-2 px-2'> or </p>
-                <div style={{ height: '1px' }} className='bg-dark w-50'></div>
+                <div className='d-flex align-items-center'>
+                    <div style={{ height: '1px' }} className='bg-dark w-50'></div>
+                    <p className='mt-2 px-2'> or </p>
+                    <div style={{ height: '1px' }} className='bg-dark w-50'></div>
+                </div>
+
+                <div>
+                    <button onClick={() => signInWithGoogle()}>
+                        <img width={25} className="me-1 google" src={google} alt="" />
+                        Google</button>
+                </div>
+
             </div>
-
-            <div>
-                <button onClick={() => signInWithGoogle()}>
-                    <img width={25} className="me-1 google" src={google} alt="" />
-                    Google</button>
-            </div>
-
         </div>
     );
 };

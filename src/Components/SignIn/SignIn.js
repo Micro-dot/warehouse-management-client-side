@@ -44,33 +44,35 @@ const SignIn = () => {
     }
 
     return (
-        <div className="login-container">
-            <div className="login-title">LOGIN</div>
+        <div className='d-flex'>
+            <img className='login-image' src={"https://thumbs.dreamstime.com/b/bookstore-interior-bookshelves-cheerful-cashier-desk-advertising-banner-poster-promotional-leaflet-flat-vector-184179648.jpg"} alt="" />
+            <div className="login-container">
+                <div className="login-title">LOGIN</div>
+                <form onSubmit={handleFromLogin} className="login-form">
+                    <input onChange={handleEmail} type="text" placeholder="Your Email" required />
+                    <input onChange={handlePassword} type="password" placeholder="password" required />
+                    <p className='error-message'>{error?.message || error1?.message}</p>
+                    <p className='btn btn-link text-primary pe-auto text-decoration-none' onClick={handlepasswordreset} variant="link">Forget Password</p>
+                    <button>Login</button>
+                </form>
 
-            <form onSubmit={handleFromLogin} className="login-form">
-                <input onChange={handleEmail} type="text" placeholder="Your Email" required />
-                <input onChange={handlePassword} type="password" placeholder="password" required />
-                <p className='error-message'>{error?.message || error1?.message}</p>
-                <p className='btn btn-link text-primary pe-auto text-decoration-none' onClick={handlepasswordreset} variant="link">Forget Password</p>
-                <button>Login</button>
-            </form>
+                <p className="mt-2">Don't have an account? <Link to='/signup'>Sign Up</Link></p>
 
-            <p className="mt-2">Don't have an account? <Link to='/signup'>Sign Up</Link></p>
+                <div className='d-flex align-items-center'>
+                    <div style={{ height: '1px' }} className='bg-dark w-50'></div>
+                    <p className='mt-2 px-2'> or </p>
+                    <div style={{ height: '1px' }} className='bg-dark w-50'></div>
+                </div>
 
-            <div className='d-flex align-items-center'>
-                <div style={{ height: '1px' }} className='bg-dark w-50'></div>
-                <p className='mt-2 px-2'> or </p>
-                <div style={{ height: '1px' }} className='bg-dark w-50'></div>
-            </div>
-
-            <div>
-                <button
-                    onClick={() => signInWithGoogle()}>
+                <div>
+                    <button
+                        onClick={() => signInWithGoogle()}>
                         <img width={25} className="me-1 google" src={google} alt="" />
-                    <span>Google</span>
-                </button>
+                        <span>Google</span>
+                    </button>
+                </div>
+                <ToastContainer />
             </div>
-            <ToastContainer />
         </div>
     );
 };
