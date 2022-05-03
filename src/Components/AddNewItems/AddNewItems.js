@@ -7,7 +7,6 @@ const AddNewItems = () => {
     const [user] = useAuthState(auth);
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data)
         const url = `http://localhost:5000/items`
         fetch(url,{
             method:"POST",
