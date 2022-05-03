@@ -22,7 +22,7 @@ const MyItems = () => {
         }
     }
     useEffect(()=>{
-        const email = user?.email
+        const email = user?.email;
         const url = `http://localhost:5000/myitems?email=${email}`;
         
         fetch(url)

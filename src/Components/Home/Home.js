@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useBookItems from '../../hooks/useBookItems';
 import Banner from '../Banner/Banner';
+import Footer from '../Footer/Footer';
 import Items from '../Items/Items';
 import './Home.css';
 const Home = () => {

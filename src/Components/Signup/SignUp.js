@@ -38,8 +38,8 @@ const SignUp = () => {
         return <Loading></Loading>
     }
     return (
-        <div className='d-flex'>
-            <img className='login-image' src={"https://thumbs.dreamstime.com/b/bookstore-interior-bookshelves-cheerful-cashier-desk-advertising-banner-poster-promotional-leaflet-flat-vector-184179648.jpg"} alt="" />
+        <div className='d-flex body'>
+            <img className='login-image' src={"https://t4.ftcdn.net/jpg/04/09/86/45/360_F_409864514_22BSaAnubdKn2V979WmVIuoIXYXtM3XF.jpg"} alt="" />
             <div className="login-container">
                 <div className="login-title">SIGN UP</div>
 

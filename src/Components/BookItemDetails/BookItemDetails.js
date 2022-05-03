@@ -35,8 +35,6 @@ const BookItemDetails = () => {
             .then(data => {
                 console.log(data);
             })
-
-
     }
     return (
         <div>
