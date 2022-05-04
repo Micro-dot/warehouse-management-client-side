@@ -1,11 +1,13 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 import './item.css';
 const Item = ({ book }) => {
     
     const navigate = useNavigate();
     const navigateInventory = id => {
         navigate(`/items/${id}`);
+        return <Loading></Loading>
     }
     return (
         <div key={book._id}>

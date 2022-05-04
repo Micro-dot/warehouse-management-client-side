@@ -4,6 +4,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import './Header.css';
 const Header = () => {
     const [user] = useAuthState(auth);
@@ -11,6 +12,7 @@ const Header = () => {
     const handleLogOut = () => {
         signOut(auth);
         navigate('/signin');
+        return <Loading></Loading>
     }
     return (
         <Navbar collapseOnSelect sticky='top' expand="lg" className='nav-menu' >

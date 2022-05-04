@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useBookItems from '../../hooks/useBookItems';
 import Banner from '../Banner/Banner';
-import Footer from '../Footer/Footer';
+import Contact from '../Contact/Contact';
 import Items from '../Items/Items';
 import './Home.css';
 const Home = () => {
@@ -14,6 +14,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Items></Items>
+            <Contact></Contact>
             <div className='manage-inv'>
                 <button onClick={() => navigate('/manageitems')}>Manage Inventories</button>
             </div>

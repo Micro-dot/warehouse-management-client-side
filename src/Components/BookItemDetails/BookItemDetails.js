@@ -36,7 +36,6 @@ const BookItemDetails = () => {
                 console.log(data);
             })
 
-
     }
     return (
         <div>

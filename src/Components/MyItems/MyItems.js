@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Loading from '../Loading/Loading';
 import './MyItems.css';
 const MyItems = () => {
     const [user] = useAuthState(auth);
@@ -19,6 +20,7 @@ const MyItems = () => {
                     const remainItem = myItems.filter(book => book._id !== id);
                     setMyItems(remainItem);
                 })
+            return <Loading></Loading>
         }
     }
     useEffect(() => {

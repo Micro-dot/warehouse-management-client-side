@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import useBookItems from '../../hooks/useBookItems';
+import Loading from '../Loading/Loading';
 import './Books.css'
 
 const Books = () => {
@@ -19,6 +20,7 @@ const Books = () => {
                     setBooks(remainItem);
                 })
         }
+        return <Loading></Loading>
     }
     return (
         <div>
