@@ -16,7 +16,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div class="footer-bottom">
-                        <p>copyright &copy; <a href="#">Store k</a>  </p>
+                        <p>copyright &copy; <a href="#">Store kepper</a>  </p>
                     </div>
 
                 </footer>

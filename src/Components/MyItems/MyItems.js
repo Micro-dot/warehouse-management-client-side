@@ -5,7 +5,6 @@ import Loading from '../Loading/Loading';
 import './MyItems.css';
 const MyItems = () => {
     const [user] = useAuthState(auth);
-    console.log(user);
     const [myItems, setMyItems] = useState([]);
     const handleItemDelete = id => {
         const alert = window.confirm("Confirm Delete");

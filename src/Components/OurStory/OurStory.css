@@ -1,0 +1,12 @@
+.book-store img{
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .book-store img{
+        height: 300px;
+        width: 400px;
+        margin: 10px;
+    }
+  }
