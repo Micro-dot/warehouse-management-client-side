@@ -71,7 +71,6 @@ const SignIn = () => {
                         <span>Google</span>
                     </button>
                 </div>
-                <ToastContainer />
             </div>
         </div>
     );

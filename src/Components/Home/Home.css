@@ -1,15 +1,23 @@
-.manage-inv{
+.manage-inv {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
 }
-.manage-inv button{
-    padding: 10px;
+
+.manage-inv button {
     border-radius: 10px;
-    background-color:snow;
+    background-color: black;
+    color: white;
+    width: 15%;
 }
-.manage-inv button:hover{
-   background-color: black;
-   color: whitesmoke;
+
+.manage-inv button:hover {
+    background-color: snow;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .manage-inv button {
+        width: 60%;
+    }
 }

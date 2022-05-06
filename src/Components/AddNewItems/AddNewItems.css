@@ -1,3 +1,7 @@
+.additems {
+    width: 50%;
+}
+
 form input {
     padding: 10px;
     padding-left: 20px;
@@ -33,4 +37,10 @@ form textarea {
 .add-book-button:hover {
     box-shadow: none;
     background-color: navajowhite;
+}
+
+@media only screen and (max-width: 600px) {
+    .additems {
+        width: 100%;
+    }
 }

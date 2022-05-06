@@ -21,7 +21,7 @@ const AddNewItems = () => {
         })
     };
     return (
-        <div className='w-50 mx-auto'>
+        <div className='additems mx-auto'>
             <h1>Add Book </h1>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
 
