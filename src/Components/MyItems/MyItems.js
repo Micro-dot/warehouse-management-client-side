@@ -33,7 +33,7 @@ const MyItems = () => {
     return (
 
         <div >
-            <h1>My Item</h1>
+            <h1>My Item {myItems.length}</h1>
             {
                 myItems.map(myitem =>
                     <div className='item mx-auto '>

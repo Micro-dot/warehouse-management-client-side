@@ -1,0 +1,17 @@
+.blogs{
+    text-align: start;
+    padding: 20px;
+}
+.blog{
+    margin: 20px;
+    padding: 10px;
+    
+}
+.blog h3{
+    background-color: turquoise;
+    padding: 10px;
+    margin: -10px;
+}
+.blog p{
+    margin-top: 30px;
+}
