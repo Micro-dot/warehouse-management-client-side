@@ -1,5 +1,5 @@
 .verify-mail h1 {
-    color: rgb(255, 241, 47);
+    color: black;
 }
 
 .verify-mail button {
@@ -14,11 +14,17 @@
     box-shadow: 4px 6px 6px #cbced1, -2px -2px white;
     transition: 0.5s;
     margin-bottom: 260px;
+    margin-top: 10px;
 }
 
 .verify-mail button:hover {
     box-shadow: none;
     color: orange;
+}
+
+.verify-mail img {
+    width: 350px;
+    height: 350px;
 }
 
 @media only screen and (max-width: 600px) {

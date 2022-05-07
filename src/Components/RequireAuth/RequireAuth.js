@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init'
 import Loading from '../Loading/Loading';
 import './RequiteAuth.css';
+import emailverifi from '../../images/Email-Verification.png';
 const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
     const [sendEmailVerification] = useSendEmailVerification(auth);
@@ -17,12 +18,13 @@ const RequireAuth = ({ children }) => {
     }
     if (!user.emailVerified) {
         return <div className='text-center verify-mail'>
+            <img src={emailverifi} alt="" /> <br />
             <h1> Please Verify your email address</h1>
             <p>Cheek your email & click the link to activate your account</p>
             <button
                 onClick={async () => {
                     await sendEmailVerification();
-                    toast('Sent email');
+                    toast('Email Sent');
                 }}
             >
                 Send Verification Email Again

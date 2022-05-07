@@ -12,6 +12,7 @@ import Loading from './Components/Loading/Loading';
 import MyItems from './Components/MyItems/MyItems';
 import Footer from './Components/Footer/Footer';
 import { ToastContainer } from 'react-toastify';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -36,9 +37,14 @@ function App() {
             <MyItems></MyItems>
           </RequireAuth>}>
         </Route>
-        <Route path='/items/:itemsId' element={<BookItemDetails></BookItemDetails>}></Route>
+        <Route path='/items/:itemsId' element={
+          <RequireAuth>
+            <BookItemDetails></BookItemDetails>
+          </RequireAuth>
+        }></Route>
         <Route path='signin' element={<SignIn></SignIn>}></Route>
         <Route path='signup' element={<SignUp></SignUp>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />

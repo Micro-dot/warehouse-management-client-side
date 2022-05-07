@@ -104,4 +104,7 @@ button .google{
         width: 25px;
         height: 25px;
     }
+    .login-image{
+        display: none;
+    }
 }

@@ -2,10 +2,12 @@
     height: 300px;
     width: 500px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
     .book-store img{
         height: 300px;
         width: 390px;
+        margin-left: 0;
     }
   }
