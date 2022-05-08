@@ -1,7 +1,8 @@
-.item-slice{
+.item-slice {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);   
+    grid-template-columns: repeat(2, 1fr);
 }
+
 .item {
     width: 550px;
     height: 330px;
@@ -17,34 +18,64 @@
     height: 330px;
     border-radius: 8px 0 0 8px;
 }
-.item-information{
-    
+
+.item-information {
+
     width: 100%;
     position: relative;
     text-align: start;
-    background-color:whitesmoke ;
+    background-color: whitesmoke;
 }
-.item-information p{
+
+.item-information p {
     margin-bottom: 0;
     margin-top: 10px;
     margin-left: 15px;
 }
-.btn-update button{
+
+.btn-update button {
     width: 100%;
     border: 0;
     border-radius: 0 0 8px 0;
     background-color: yellowgreen;
 }
+
 .btn-update {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
+
+.quantity-input {
+    margin: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.update-button{
+    margin: 30px;
+    padding: 10px 30px 10px 30px;
+    color: rgb(255, 0, 0);
+    background: linear-gradient(rgba(228, 181, 181, 0.5),rgba(110, 110, 110, 0.5));
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.update-button:hover{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3),
+    inset 0 1px 1px white,
+    inset 0 -1px 1px rgb(90, 90, 90),
+    inset 0 -5px 1px rgb(179, 179, 179),
+    inset 0 -10px 10px white;
+}
+
 @media only screen and (max-width: 600px) {
-    .item-slice{
+    .item-slice {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);   
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .item {
         width: 390px;
         height: 400px;
@@ -54,17 +85,19 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
     .item img {
         /* margin: 60px 0 0 0; */
         width: 150px;
         height: 350px;
         border-radius: 8px 0 0 8px;
     }
-    .item-information{
-        
+
+    .item-information {
+
         width: 100%;
         position: relative;
         text-align: start;
-        background-color:whitesmoke ;
+        background-color: whitesmoke;
     }
 }

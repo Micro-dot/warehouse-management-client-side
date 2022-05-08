@@ -45,7 +45,6 @@ const BookItemDetails = () => {
         const quantityStr = Quantity.toString();
         const newQuantity = { quantity: quantityStr, ...rest };
         setBookItem(newQuantity);
-        console.log(newQuantity);
         const url = `https://young-beach-82538.herokuapp.com/items/${itemsId}`;
         fetch(url, {
             method: 'PUT',
@@ -56,7 +55,6 @@ const BookItemDetails = () => {
         })
             .then(res => res.json())
             .then(data => { })
-        event.target.value.rest();
     }
 
 
@@ -84,7 +82,8 @@ const BookItemDetails = () => {
                 </div>
             </div>
             <div>
-                <input type="text" placeholder='Add your quantity' required onBlur={handleQuantity} /> <button onClick={handleupdate}>Update</button>
+                <input className='quantity-input' type="text" placeholder='Add your quantity' onBlur={handleQuantity} required/> 
+                <button className='update-button' onClick={handleupdate}>Update</button>
             </div>
             <div className='manage-inv'>
                 <button onClick={() => navigate('/manageitems')}>Manage Inventories</button>
