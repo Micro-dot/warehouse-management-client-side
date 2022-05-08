@@ -24,6 +24,7 @@ form textarea {
     font-size: 17px;
     border-radius: 10px;
     width: 70%;
+    margin-left:10px ;
 }
 
 form .img {
@@ -59,16 +60,22 @@ form .img {
         width: 100%;
     }
     form input {
-        width: 70%;
+        width: 100%;
     }
     form .img {
-        width: 70%;
+        width: 100%;
     }
     
     form textarea {
-        width: 70%;
+        width: 100%;
     }
     .add-book-button {
         width: 30%;
+    }
+    .addbook{
+        display: none;
+    }
+    .addbookfrom{
+        width: 95%;
     }
 }

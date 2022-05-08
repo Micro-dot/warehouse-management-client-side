@@ -33,10 +33,8 @@ const BookItemDetails = () => {
     }, [itemsId])
 
     const handleQuantity = event => {
-        if (event.target.value > 0) {
-            setUpdateQuantity(event.target.value);
-            console.log(setUpdateQuantity);
-        }
+        setUpdateQuantity(event.target.value);
+        console.log(setUpdateQuantity);
     }
     const handleupdate = event => {
         const { quantity, ...rest } = bookItem;
@@ -58,7 +56,7 @@ const BookItemDetails = () => {
         })
             .then(res => res.json())
             .then(data => { })
-
+        event.target.value.rest();
     }
 
 
