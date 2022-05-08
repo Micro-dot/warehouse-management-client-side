@@ -5,7 +5,7 @@ const Contact = () => {
         <div>
             <h2 className=''>Contact US</h2>
             <div className='d-lg-flex container'>
-                <div className=' d-lg-flex align-items-center w-100'>
+                <div className='d-lg-flex align-items-center w-100'>
                     <div>
                         <Accordion.Item className='p-2' >
                             <b>Phone Number:  317-357-4113</b>
