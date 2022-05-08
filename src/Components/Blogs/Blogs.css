@@ -5,6 +5,7 @@
 .blog{
     margin: 20px;
     padding: 10px;
+    background-color: aliceblue;
     
 }
 .blog h3{
@@ -14,4 +15,5 @@
 }
 .blog p{
     margin-top: 30px;
+    
 }

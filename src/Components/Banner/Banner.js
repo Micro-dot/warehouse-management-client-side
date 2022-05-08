@@ -5,8 +5,7 @@ const Banner = () => {
     return (
         <div className='d-lg-flex main'>
             <div className='banner-title'>
-                <h2 className='heading'>WELCOME TO BOOK STORE</h2>
-                <p><b>“This funding came at the most perfect time when I prayed I would have rent for next month and payroll and purchases. Your team will never, ever, know how much booksellers like me appreciate your business.” — VaLinda Miller, The Turning Page Bookshop, Goose Creek, SC </b></p>
+                <h2 className='heading'>GET YOUR NEW <span className='color'>BOOK COLLECTION</span></h2>
             </div>
             <div className='banner-img'>
                 <img src={logo} alt="" />
