@@ -9,7 +9,7 @@ const MyItems = () => {
     const handleItemDelete = id => {
         const alert = window.confirm("Confirm Delete");
         if (alert) {
-            const url = `http://localhost:5000/items/${id}`;
+            const url = `https://young-beach-82538.herokuapp.com/items/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
@@ -24,7 +24,7 @@ const MyItems = () => {
     }
     useEffect(() => {
         const email = user?.email;
-        const url = `http://localhost:5000/myitems?email=${email}`;
+        const url = `https://young-beach-82538.herokuapp.com/myitems?email=${email}`;
 
         fetch(url)
             .then(res => res.json())

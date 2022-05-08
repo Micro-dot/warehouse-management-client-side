@@ -13,7 +13,7 @@ const BookItemDetails = () => {
             const quantityStr = quantity1.toString();
             const newQuantity = { quantity: quantityStr, ...rest };
             setBookItem(newQuantity);
-            const url = `http://localhost:5000/items/${itemsId}`;
+            const url = `https://young-beach-82538.herokuapp.com/items/${itemsId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -26,7 +26,7 @@ const BookItemDetails = () => {
         }
     }
     useEffect(() => {
-        const url = `http://localhost:5000/items/${itemsId}`;
+        const url = `https://young-beach-82538.herokuapp.com/items/${itemsId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setBookItem(data))
@@ -48,7 +48,7 @@ const BookItemDetails = () => {
         const newQuantity = { quantity: quantityStr, ...rest };
         setBookItem(newQuantity);
         console.log(newQuantity);
-        const url = `http://localhost:5000/items/${itemsId}`;
+        const url = `https://young-beach-82538.herokuapp.com/items/${itemsId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

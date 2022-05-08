@@ -9,7 +9,7 @@ const AddNewItems = () => {
     const [user] = useAuthState(auth);
     const { register, handleSubmit } = useForm();
     const onSubmit = (data, e) => {
-        const url = `http://localhost:5000/items`
+        const url = `https://young-beach-82538.herokuapp.com/items`
         fetch(url, {
             method: "POST",
             headers: {

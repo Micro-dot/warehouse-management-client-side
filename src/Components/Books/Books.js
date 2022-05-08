@@ -9,7 +9,7 @@ const Books = () => {
     const handleItemDelete = id => {
         const alert = window.confirm("Confirm Delete");
         if (alert) {
-            const url = `http://localhost:5000/items/${id}`;
+            const url = `https://young-beach-82538.herokuapp.com/items/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
