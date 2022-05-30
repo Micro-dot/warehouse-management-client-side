@@ -32,7 +32,7 @@ const AddNewItems = () => {
                     <img src={addbook} alt="" />
                 </div>
                 <form className='addbookfrom' onSubmit={handleSubmit(onSubmit)}>
-                    <input className='mb-2' value={user?.email} {...register("email")} readOnly /> <br />
+                    <input className='mb-2' value={user?.email} {...register("email")}/> <br />
 
                     <input placeholder='Book Name' className='mb-2' {...register("name")} required />
                     <input placeholder='Book Quantity' className='mb-2' {...register("quantity")} required /> <br />

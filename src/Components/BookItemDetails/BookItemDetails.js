@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import './BookItemDetails.css';
 const BookItemDetails = () => {
     const { itemsId } = useParams();
+    console.log(itemsId);
     const [bookItem, setBookItem] = useState({});
     const [Updatequantity, setUpdateQuantity] = useState('');
     const navigate = useNavigate();
@@ -82,7 +83,7 @@ const BookItemDetails = () => {
                 </div>
             </div>
             <div>
-                <input className='quantity-input' type="text" placeholder='Add your quantity' onBlur={handleQuantity} required/> 
+                <input className='quantity-input' type="text" placeholder='Add your quantity' onBlur={handleQuantity} required />
                 <button className='update-button' onClick={handleupdate}>Update</button>
             </div>
             <div className='manage-inv'>
